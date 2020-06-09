@@ -32,6 +32,7 @@ export default function CheckoutPage() {
         setOrderResult(undefined);
         document.title = "Fast shopping | Checkout";
         setIsEmpty(order.items.length === 0 && !orderResult && !currentCreation.isFetching);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onPlaceOrder = () => {

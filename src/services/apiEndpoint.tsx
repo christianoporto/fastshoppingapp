@@ -1,22 +1,23 @@
 import appconfig from "../appconfig";
+import { joinUrl } from "../utils";
 
 const api = appconfig.API_ENDPOINT;
 export const productEndpoint = {
     get: {
-        customersByAccount: `${api}customer/api/customers/account/`,
-        customer: `${api}customer/api/customers/`,
+        customersByAccount: joinUrl(api, "customer/api/customers/account/"),
+        customer: joinUrl(api, "customer/api/customers/"),
     },
     post: {
-        getProductsInPages: `${api}products/pages`,
+        getProductsInPages: joinUrl(api, "products/pages"),
     },
 };
 export const orderEndpoint = {
     post: {
-        createOrder: api + "orders",
+        createOrder: joinUrl(api, "orders"),
     },
 };
 export const customerEndpoint = {
     get: {
-        byEmail: (email: string) => `${api}customers/email/${email}`,
+        byEmail: (email: string) => joinUrl(api, `customers/email/${email}`),
     },
 };
