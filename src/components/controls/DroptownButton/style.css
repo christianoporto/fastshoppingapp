@@ -1,0 +1,31 @@
+.btn-dropdown {
+    background: transparent;
+    font-size: 1rem;
+    border-radius: 4px;
+    display: flex;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-primary);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px var(--color-primary-shadow);
+    z-index: 11;
+    border-radius: 4px;
+    overflow: hidden;
+    max-height: 330px;
+    overflow-y: auto;
+}
+.right-0 {
+    right: 0;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}

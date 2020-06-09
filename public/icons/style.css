@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'wahioFontIcon';
+  src:  url('fonts/wahioFontIcon.eot?trxbyh');
+  src:  url('fonts/wahioFontIcon.eot?trxbyh#iefix') format('embedded-opentype'),
+    url('fonts/wahioFontIcon.ttf?trxbyh') format('truetype'),
+    url('fonts/wahioFontIcon.woff?trxbyh') format('woff'),
+    url('fonts/wahioFontIcon.svg?trxbyh#wahioFontIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="wahioicon-"], [class*=" wahioicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wahioFontIcon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wahioicon-arrow-down:before {
+  content: "\e900";
+}
+.wahioicon-arrow-down-chevron:before {
+  content: "\e901";
+}
+.wahioicon-arrow-left:before {
+  content: "\e902";
+}
+.wahioicon-arrow-left-chevron:before {
+  content: "\e903";
+}
+.wahioicon-arrow-right:before {
+  content: "\e904";
+}
+.wahioicon-arrow-right-chevron:before {
+  content: "\e905";
+}
+.wahioicon-arrow-up:before {
+  content: "\e906";
+}
+.wahioicon-arrow-up-chevron:before {
+  content: "\e907";
+}
+.wahioicon-barcode:before {
+  content: "\e908";
+}
+.wahioicon-barcode-qr:before {
+  content: "\e909";
+}
+.wahioicon-bell:before {
+  content: "\e90a";
+}
+.wahioicon-box-linear:before {
+  content: "\e90b";
+}
+.wahioicon-calendar:before {
+  content: "\e90c";
+}
+.wahioicon-cancel:before {
+  content: "\e90d";
+}
+.wahioicon-cart:before {
+  content: "\e90e";
+}
+.wahioicon-check-circle:before {
+  content: "\e90f";
+}
+.wahioicon-check-fill:before {
+  content: "\e910";
+}
+.wahioicon-clock-fast-fill:before {
+  content: "\e911";
+}
+.wahioicon-clock-linear:before {
+  content: "\e912";
+}
+.wahioicon-close:before {
+  content: "\e913";
+}
+.wahioicon-credit-card:before {
+  content: "\e914";
+}
+.wahioicon-dashboard:before {
+  content: "\e915";
+}
+.wahioicon-delete-image:before {
+  content: "\e916";
+}
+.wahioicon-dollars:before {
+  content: "\e917";
+}
+.wahioicon-edit:before {
+  content: "\e918";
+}
+.wahioicon-eraser:before {
+  content: "\e919";
+}
+.wahioicon-filter:before {
+  content: "\e91a";
+}
+.wahioicon-floppy-disk:before {
+  content: "\e91b";
+}
+.wahioicon-friend:before {
+  content: "\e91c";
+}
+.wahioicon-gear-option:before {
+  content: "\e91d";
+}
+.wahioicon-graph:before {
+  content: "\e91e";
+}
+.wahioicon-grid-fill:before {
+  content: "\e91f";
+}
+.wahioicon-grid-linear:before {
+  content: "\e920";
+}
+.wahioicon-home:before {
+  content: "\e921";
+}
+.wahioicon-invoice:before {
+  content: "\e922";
+}
+.wahioicon-label-category:before {
+  content: "\e923";
+}
+.wahioicon-label-linear:before {
+  content: "\e924";
+}
+.wahioicon-list-linear:before {
+  content: "\e925";
+}
+.wahioicon-menu:before {
+  content: "\e926";
+}
+.wahioicon-minus:before {
+  content: "\e927";
+}
+.wahioicon-minus-fill:before {
+  content: "\e928";
+}
+.wahioicon-moon:before {
+  content: "\e929";
+}
+.wahioicon-more:before {
+  content: "\e92a";
+}
+.wahioicon-more-hori:before {
+  content: "\e92b";
+}
+.wahioicon-movement-linear:before {
+  content: "\e92c";
+}
+.wahioicon-news:before {
+  content: "\e92d";
+}
+.wahioicon-people-2:before {
+  content: "\e92e";
+}
+.wahioicon-people-3:before {
+  content: "\e92f";
+}
+.wahioicon-photo-camera:before {
+  content: "\e930";
+}
+.wahioicon-plus:before {
+  content: "\e931";
+}
+.wahioicon-plus-fill:before {
+  content: "\e932";
+}
+.wahioicon-printer:before {
+  content: "\e933";
+}
+.wahioicon-provider-user:before {
+  content: "\e934";
+}
+.wahioicon-report:before {
+  content: "\e935";
+}
+.wahioicon-restaurant:before {
+  content: "\e936";
+}
+.wahioicon-scan:before {
+  content: "\e937";
+}
+.wahioicon-search:before {
+  content: "\e938";
+}
+.wahioicon-shipping:before {
+  content: "\e939";
+}
+.wahioicon-shopping-card-linear:before {
+  content: "\e93a";
+}
+.wahioicon-shopping-cart:before {
+  content: "\e93b";
+}
+.wahioicon-shopping-cart-plus:before {
+  content: "\e93c";
+}
+.wahioicon-square-list:before {
+  content: "\e93d";
+}
+.wahioicon-sun:before {
+  content: "\e93e";
+}
+.wahioicon-trash:before {
+  content: "\e93f";
+}
+.wahioicon-trash-linear:before {
+  content: "\e940";
+}
+.wahioicon-warehouse-linear:before {
+  content: "\e941";
+}
+.wahioicon-warning:before {
+  content: "\e942";
+}
+.wahioicon-wrong-access:before {
+  content: "\e943";
+}
