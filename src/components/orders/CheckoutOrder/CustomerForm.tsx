@@ -16,7 +16,6 @@ export default function CustomerForm({ order }: IPropsOrder) {
         };
         updateAllOrder({ ...order, customerNew: copyCustomer }, dispatch, true);
     };
-    console.log("CUSTOMERNEW: ", order);
     return (
         <div>
             <InputTextField

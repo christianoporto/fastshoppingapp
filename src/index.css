@@ -879,9 +879,11 @@ tr.row-p-1 td {
     }
     .card-image .image-size {
         width: 100%;
+        max-width: 210px;
         margin: 0;
-        max-height: 220px;
+        /* max-height: 220px; */
         height: auto;
+        margin: auto;
     }
 
     .card-content {

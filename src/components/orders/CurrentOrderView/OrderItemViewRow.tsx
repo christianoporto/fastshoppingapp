@@ -1,6 +1,7 @@
 import React from "react";
 import { IOrderItem } from "../../../store/types/orderType";
-import { formatMoney } from "../../../utils";
+import { formatMoney, stringIsNullOrEmpty } from "../../../utils";
+const EmptyImage = require("../../../assets/images/emptyimage.png");
 
 interface IProps {
     tableWidth: number;
@@ -11,9 +12,9 @@ interface IProps {
 }
 
 export default function OrderItemViewRow(props: IProps) {
-    const { tableWidth, orderItem,  onQuantityChange } = props;
+    const { tableWidth, orderItem, onQuantityChange } = props;
     const { product } = orderItem;
-
+    const image = stringIsNullOrEmpty(product.image) ? EmptyImage : product.image;
     const btnAdd = () => {
         return (
             <div>
@@ -35,8 +36,8 @@ export default function OrderItemViewRow(props: IProps) {
         <tr className=" ">
             {isRow && <td className="pl-2 fitwidth font-md text-secondary">{props.index}</td>}
             <td className="fitwidth">
-                <div className="fixed-size-sm rounded-sm bg-secondary mr-2">
-                    <img className="image-cover" src="https://picsum.photos/200/300" alt="" />
+                <div className="fixed-size-sm rounded-sm mr-2">
+                    <img className="image-cover" src={image} alt={product.name} />
                 </div>
             </td>
             <td>
