@@ -7,6 +7,7 @@ import { removeOrderItemFromOrder, updateOrderItemToOrder } from "../../../store
 import { NavLink } from "react-router-dom";
 import { formatMoney } from "../../../utils";
 import { getTotalAmount, getContainerWidth, lisetenerContainerResize } from "../utils";
+const EmptyBox = require("../../../assets/images/emptybox.png");
 
 const CONTAINER_ID = "ordertableview";
 
@@ -40,13 +41,21 @@ const CurrentOrderView = () => {
     const [tableWidth, setTableWidth] = useState(getContainerWidth("root"));
     useEffect(() => {
         lisetenerContainerResize(setTableWidth, CONTAINER_ID);
-         document.title = "Fast shopping | My Order";
+        document.title = "Fast shopping | My Order";
     }, []);
 
     if (!currentOrderState.order || currentOrderState.order.items.length === 0) {
         return (
             <OrderContainer>
-                <h3>Aún no tienes nada en el carrito de compras</h3>
+                <div className="text-center pb-3">
+                    <img src={EmptyBox} alt="empty cart" />
+                    <div>
+                        <p className="text-secondary">Your shopping cart is empty</p>
+                        <NavLink to="/">
+                            <button className="btn btn-primary-outline">Search products</button>
+                        </NavLink>
+                    </div>
+                </div>
             </OrderContainer>
         );
     }
