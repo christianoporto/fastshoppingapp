@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IProduct, IProductCategory } from "../../store/types/productTypes";
 import { formatMoney, stringIsNullOrEmpty } from "../../utils";
 import "../../animations/fadeEffects/fadeInLeft.css";
-const EmptyImage = require("../../assets/images/emptyimage.png");
+const EmptyImage = require("../../assets/images/emptyimage.png"); 
 
 interface IProductCard {
     product: IProduct;
