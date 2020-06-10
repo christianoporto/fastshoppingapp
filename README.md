@@ -1,7 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo 
+## Demo api/client, with automatic CI/CD
 
+-   SERVER: [https://fastshoppingappserver.azurewebsites.net](https://fastshoppingappserver.azurewebsites.net).
+-   CLIENT: [https://fastshopping.z13.web.core.windows.net](https://fastshopping.z13.web.core.windows.net).
+
+### Screenshots
+
+-   Available in dark and light theme
+
+![alt text](demo/1dark.jpg "Product list")
+![alt text](demo/1light.jpg "Product list")
+![alt text](demo/2light.jpg "Cart")
+![alt text](demo/3light.jpg "Checkout")
 
 ## Available Scripts
 
