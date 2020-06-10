@@ -17,14 +17,14 @@ const animationTheme = () => {
 
 const setNewTheme = (setCurrentTheme: (value: string) => void) => {
     const current = localStorage.getItem("theme");
-    if (current === "light") {
-        document.documentElement.setAttribute("data-theme", "dark");
-        localStorage.setItem("theme", "dark"); //add this
-        setCurrentTheme("dark");
-    } else {
+    if (current === "dark") {
         document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("theme", "light"); //add this
         setCurrentTheme("light");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark"); //add this
+        setCurrentTheme("dark");
     }
 };
 export const MenuHorizontal = () => {
